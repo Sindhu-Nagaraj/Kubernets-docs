@@ -1,0 +1,38 @@
+kubectl get pods -n wordpress
+
+kubectl create ns wordpress
+
+kubectl apply -f pv_mysql.yaml -n wordpress
+
+kubectl get pv -n wordpress
+
+kubectl apply -f mysql_deployment.yaml -n wordpress
+
+kubectl get services -n wordpress
+
+10.152.183.44
+
+kubectl describe pod mysql-5694f6b65f-6htd9 -n wordpress
+
+kubectl exec -it mysql-5694f6b65f-6htd9 -n wordpress -- bash
+
+mysql -u root -p
+
+password
+
+show databases;
+
+
+kubectl apply -f pv_wordpress.yaml -n wordpress
+
+kubectl apply -f wordpress.yaml -n wordpress
+
+
+kubectl get pods -n wordpress
+
+
+
+
+
+
+
